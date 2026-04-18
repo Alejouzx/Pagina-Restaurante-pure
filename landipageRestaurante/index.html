@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Épure — Restaurante</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <div class="logo">Épure</div>
+      <nav>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#reservas">Reservas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Gastronomía auténtica · Medellín</span>
+      <h1>Sabores<br><em>que enamoran</em></h1>
+      <p>Descubre la mejor comida casera con ingredientes frescos del campo colombiano</p>
+      <a href="#menu" class="btn-hero">Ver menú</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PLATOS -->
+  <section class="menu container" id="menu">
+    <div class="section-header">
+      <span class="section-tag">— Nuestra cocina</span>
+      <h2>Platos destacados</h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="img/image3.svg" alt="Bandeja Paisa">
+          <span class="card-badge">Tradicional</span>
+        </div>
+        <div class="card-body">
+          <h3>Bandeja Paisa</h3>
+          <p>Plato tradicional colombiano lleno de sabor y tradición antioqueña.</p>
+          <div class="card-footer">
+            <span class="precio">$18.000</span>
+            <button class="btn-pedir">Pedir</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="img/image4.svg" alt="Sancocho">
+          <span class="card-badge">Favorito</span>
+        </div>
+        <div class="card-body">
+          <h3>Sancocho</h3>
+          <p>Sopa casera perfecta para compartir en familia con amor.</p>
+          <div class="card-footer">
+            <span class="precio">$15.000</span>
+            <button class="btn-pedir">Pedir</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="img/image5.svg" alt="Arroz con Pollo">
+        </div>
+        <div class="card-body">
+          <h3>Arroz con Pollo</h3>
+          <p>Clásico arroz con pollo al estilo casero, con sazón único.</p>
+          <div class="card-footer">
+            <span class="precio">$14.000</span>
+            <button class="btn-pedir">Pedir</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="reservas" id="reservas">
+    <div class="container reservas-inner">
+      <div class="reservas-text">
+        <span class="section-tag">— Reserva tu mesa</span>
+        <h2>Una experiencia que recordarás</h2>
+        <p>Reserva tu lugar y vive una noche especial con los mejores sabores de la cocina colombiana.</p>
+        <a href="contacto.html" class="btn-reserva">Hacer reserva</a>
+      </div>
+      <div class="reservas-deco">
+        <div class="deco-circle"></div>
+        <div class="deco-text">
+          <span>Lun – Dom</span>
+          <strong>12:00 – 22:00</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="galeria container">
+    <div class="section-header">
+      <span class="section-tag">— Nuestra galería</span>
+      <h2>Momentos en Épure</h2>
+    </div>
+
+    <div class="grid-galeria">
+      <img src="img/image6.svg" alt="Galería 1">
+      <img src="img/image7.svg" alt="Galería 2">
+      <img src="img/image8.svg" alt="Galería 3">
+      <img src="img/image9.svg" alt="Galería 4">
+      <img src="img/image10.svg" alt="Galería 5">
+      <img src="img/image11.svg" alt="Galería 6">
+      <img src="img/image12.svg" alt="Galería 7">
+      <img src="img/image13.svg" alt="Galería 8">
+      <img src="img/image14.svg" alt="Galería 9">
+      <img src="img/image15.svg" alt="Galería 10">
+      <img src="img/image16.svg" alt="Galería 11">
+      <img src="img/image17.svg" alt="Galería 12">
+    </div>
+  </section>
+
+  <section>
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="tab1">📄 Información</button>
+        <button class="tab-btn" data-tab="tab2">📊 Datos</button>
+        <button class="tab-btn" data-tab="tab3">📞 Contacto</button>
+    </div>
+
+
+      <div id="tab1" class="tab-content active">
+            <h2>Información</h2>
+            <p>Contenido moderno con animación suave.</p>
+        </div>
+
+        <div id="tab2" class="tab-content">
+            <h2>Datos</h2>
+            <p>Aquí puedes mostrar estadísticas o información.</p>
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <h2>Contacto</h2>
+            <p>Formulario o datos de contacto.</p>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">Épure</div>
+        <p>Comida casera con sabor auténtico.</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <a href="index.html">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Encuéntranos</h4>
+        <p>📍 Medellín, Colombia</p>
+        <p>📞 +57 300 000 0000</p>
+        <p>✉️ hola@epure.co</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Épure — Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
