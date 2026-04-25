@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Épure — Restaurante</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <div class="logo">Épure</div>
+      <nav>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#reservas">Reservas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Gastronomía auténtica · Medellín</span>
+      <h1>Sabores<br><em>que enamoran</em></h1>
+      <p>Descubre la mejor comida casera con ingredientes frescos del campo colombiano</p>
+      <a href="#menu" class="btn-hero">Ver menú</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="historia container" id="historia">
+  <div class="historia-grid">
+ 
+    <div class="historia-media">
+      <div class="historia-img-wrap">
+        <img src="img/ChatGPT Image 25 abr 2026, 09_19_49 a.m..png" alt="El origen de Épure">
+        <div class="historia-badge">
+          <span class="historia-badge-num">2018</span>
+          <span class="historia-badge-txt">Fundado</span>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="historia-texto">
+      <span class="section-tag">— Nuestra historia</span>
+      <h2>Más que un restaurante,<br><em>una mesa familiar</em></h2>
+      <p class="historia-lead">
+        Épure nació del sueño de llevar los sabores auténticos del campo antioqueño
+        al corazón de Medellín. Una cocina de verdad, sin atajos.
+      </p>
+      <p class="historia-body">
+        Cada receta es herencia. Cada ingrediente viene de manos que conocemos.
+        Cocinamos con el mismo amor que se cocina en casa, pero con la dedicación
+        de quienes han hecho de esto su vocación.
+      </p>
+ 
+      <div class="historia-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-label">Años de historia</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="40">0</span>
+          <span class="stat-label">Platos en carta</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="12000">0</span>
+          <span class="stat-label">Comensales felices</span>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+  <!-- SECCIÓN PLATOS -->
+  <section class="menu container" id="menu">
+    <div class="section-header">
+      <span class="section-tag">— Nuestra cocina</span>
+      <h2>Platos destacados</h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="img/image3.svg" alt="Bandeja Paisa">
+          <span class="card-badge">Tradicional</span>
+        </div>
+        <div class="card-body">
+          <h3>Bandeja Paisa</h3>
+          <p>Plato tradicional colombiano lleno de sabor y tradición antioqueña.</p>
+          <div class="card-footer">
+            <span class="precio">$18.000</span>
+            <button class="btn-pedir">Pedir</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="img/image4.svg" alt="Sancocho">
+          <span class="card-badge">Favorito</span>
+        </div>
+        <div class="card-body">
+          <h3>Sancocho</h3>
+          <p>Sopa casera perfecta para compartir en familia con amor.</p>
+          <div class="card-footer">
+            <span class="precio">$15.000</span>
+            <button class="btn-pedir">Pedir</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="img/image5.svg" alt="Arroz con Pollo">
+        </div>
+        <div class="card-body">
+          <h3>Arroz con Pollo</h3>
+          <p>Clásico arroz con pollo al estilo casero, con sazón único.</p>
+          <div class="card-footer">
+            <span class="precio">$14.000</span>
+            <button class="btn-pedir">Pedir</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+     SECCIÓN PLATO ESTRELLA
+     Pegar DESPUÉS de la sección #menu
+     y ANTES de la sección .reservas
+     ================================================ -->
+
+<section class="plato-estrella" id="plato-estrella">
+
+  <div class="pe-header">
+    <span class="section-tag">— Plato estrella</span>
+    <h2>Medallones de <em>Solomito</em></h2>
+    <p class="pe-descripcion">Reducción de vino tinto · Salsa de frutos rojos · Vegetales frescos · Papas fritas trufadas</p>
+  </div>
+
+  <div class="pe-escena" id="peEscena">
+
+    <!-- PLATO HERO (imagen central) -->
+    <div class="pe-plato-wrap" id="pePlatoWrap">
+      <img src="img/plato-hero.png" alt="Medallones de Solomito Épure" class="pe-plato-img" draggable="false">
+      <div class="pe-plato-overlay"></div>
+    </div>
+
+    <!-- INGREDIENTES -->
+    <div class="pe-ingrediente" id="ing0" data-pos-x="-38" data-pos-y="-52">
+      <div class="pe-ing-img-wrap">
+        <img src="img/ing-solomito.png" alt="Solomito" draggable="false">
+      </div>
+      <div class="pe-ing-tooltip">
+        <span class="pe-ing-nombre">Medallón de solomito</span>
+        <span class="pe-ing-desc">Corte premium del lomo fino, sellado a fuego alto para un exterior caramelizado y centro rosado jugoso. Término 3/4.</span>
+      </div>
+      <span class="pe-ing-label">Solomito</span>
+    </div>
+
+    <div class="pe-ingrediente" id="ing1" data-pos-x="42" data-pos-y="-58">
+      <div class="pe-ing-img-wrap">
+        <img src="img/ing-reduccion.png" alt="Reducción de vino tinto" draggable="false">
+      </div>
+      <div class="pe-ing-tooltip">
+        <span class="pe-ing-nombre">Reducción de vino tinto</span>
+        <span class="pe-ing-desc">Cabernet reducido con chalotas y fondo de res durante 40 min. Concentrado, sedoso e intenso.</span>
+      </div>
+      <span class="pe-ing-label">Vino tinto</span>
+    </div>
+
+    <div class="pe-ingrediente" id="ing2" data-pos-x="-55" data-pos-y="10">
+      <div class="pe-ing-img-wrap">
+        <img src="img/ing-frutosrojos.png" alt="Frutos rojos" draggable="false">
+      </div>
+      <div class="pe-ing-tooltip">
+        <span class="pe-ing-nombre">Salsa de frutos rojos</span>
+        <span class="pe-ing-desc">Moras, frambuesas y arándanos reducidos con azúcar morena. Dulce-ácido que equilibra la carne.</span>
+      </div>
+      <span class="pe-ing-label">Frutos rojos</span>
+    </div>
+
+    <div class="pe-ingrediente" id="ing3" data-pos-x="55" data-pos-y="8">
+      <div class="pe-ing-img-wrap">
+        <img src="img/ing-vegetales.png" alt="Vegetales frescos" draggable="false">
+      </div>
+      <div class="pe-ing-tooltip">
+        <span class="pe-ing-nombre">Vegetales frescos</span>
+        <span class="pe-ing-desc">Espárragos, zucchini y zanahoria baby salteados en mantequilla con ajo. Cocción al dente.</span>
+      </div>
+      <span class="pe-ing-label">Vegetales</span>
+    </div>
+
+    <div class="pe-ingrediente" id="ing4" data-pos-x="-30" data-pos-y="55">
+      <div class="pe-ing-img-wrap">
+        <img src="img/ing-papas.png" alt="Papas trufadas" draggable="false">
+      </div>
+      <div class="pe-ing-tooltip">
+        <span class="pe-ing-nombre">Papas fritas trufadas</span>
+        <span class="pe-ing-desc">Papa criolla frita en aceite de oliva, terminada con aceite de trufa negra y sal de mar en escamas.</span>
+      </div>
+      <span class="pe-ing-label">Papas trufadas</span>
+    </div>
+
+    <!-- HINT -->
+    <p class="pe-hint" id="peHint">Pasa el cursor sobre el plato</p>
+
+  </div>
+
+  <!-- PRECIO Y CTA -->
+  <div class="pe-footer">
+    <div class="pe-precio-wrap">
+      <span class="pe-precio-label">Precio por persona</span>
+      <span class="pe-precio">$69.900</span>
+    </div>
+  </div>
+
+</section>
+
+  <!-- RESERVAS -->
+  <section class="reservas" id="reservas">
+    <div class="container reservas-inner">
+      <div class="reservas-text">
+        <span class="section-tag">— Reserva tu mesa</span>
+        <h2>Una experiencia que recordarás</h2>
+        <p>Reserva tu lugar y vive una noche especial con los mejores sabores de la cocina colombiana.</p>
+        <a href="contacto.html" class="btn-reserva">Hacer reserva</a>
+      </div>
+      <div class="reservas-deco">
+        <div class="deco-circle"></div>
+        <div class="deco-text">
+          <span>Lun – Dom</span>
+          <strong>12:00 – 22:00</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="galeria container">
+    <div class="section-header">
+      <span class="section-tag">— Nuestra galería</span>
+      <h2>Momentos en Épure</h2>
+    </div>
+
+    <div class="grid-galeria">
+      <img src="img/image6.svg" alt="Galería 1">
+      <img src="img/image7.svg" alt="Galería 2">
+      <img src="img/image8.svg" alt="Galería 3">
+      <img src="img/image9.svg" alt="Galería 4">
+      <img src="img/image10.svg" alt="Galería 5">
+      <img src="img/image11.svg" alt="Galería 6">
+      <img src="img/image12.svg" alt="Galería 7">
+      <img src="img/image13.svg" alt="Galería 8">
+      <img src="img/image14.svg" alt="Galería 9">
+      <img src="img/image15.svg" alt="Galería 10">
+      <img src="img/image16.svg" alt="Galería 11">
+      <img src="img/image17.svg" alt="Galería 12">
+    </div>
+  </section>
+
+  <section class="ubicacion" id="ubicacion">
+  <div class="container ubicacion-inner">
+ 
+    <div class="section-header">
+      <span class="section-tag">— Visítanos</span>
+      <h2>¿Dónde encontrarnos?</h2>
+    </div>
+ 
+    <div class="ubicacion-grid">
+ 
+      <!-- Mapa -->
+      <div class="mapa-wrap">
+        <iframe
+          title="Ubicación Épure Medellín"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0!2d-75.5812119!3d6.2178631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb5b8d185%3A0x42137603c4b04d!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1680000000000"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+ 
+      <!-- Info -->
+      <div class="ubicacion-info">
+ 
+        <div class="ubi-bloque">
+          <div class="ubi-icono">📍</div>
+          <div>
+            <h4>Dirección</h4>
+            <p>Medellín, Antioquia, Colombia</p>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="ubi-link">
+              Cómo llegar →
+            </a>
+          </div>
+        </div>
+ 
+        <div class="ubi-bloque">
+          <div class="ubi-icono">📞</div>
+          <div>
+            <h4>Reservas y contacto</h4>
+            <p>+57 300 000 0000</p>
+            <p>hola@epure.co</p>
+          </div>
+        </div>
+ 
+        <div class="ubi-bloque">
+          <div class="ubi-icono">🕐</div>
+          <div>
+            <h4>Horarios</h4>
+            <div class="horarios-tabla">
+              <div class="horario-fila">
+                <span class="dia">Lun – Vie</span>
+                <span class="hora">12:00 – 22:00</span>
+              </div>
+              <div class="horario-fila">
+                <span class="dia">Sábado</span>
+                <span class="hora">11:00 – 23:00</span>
+              </div>
+              <div class="horario-fila">
+                <span class="dia">Domingo</span>
+                <span class="hora">11:00 – 21:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">Épure</div>
+        <p>Comida casera con sabor auténtico.</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <a href="index.html">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Encuéntranos</h4>
+        <p>📍 Medellín, Colombia</p>
+        <p>📞 +57 300 000 0000</p>
+        <p>✉️ hola@epure.co</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Épure — Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
